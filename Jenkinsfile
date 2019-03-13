@@ -1,7 +1,7 @@
 node {
   stage('codebuild') {
     awsCodeBuild(
-      projectName: 'sandbox',
+      projectName: 'jenkins-build',
       region: 'ap-northeast-1',
       sourceControlType: 'project',
       sourceVersion: env.BRANCH_NAME,
