@@ -21,5 +21,5 @@ public class Application extends SpringBootServletInitializer {
 }
 
 /* commitテストのためのコメント。無意味。aaabbbcccdddeeeefffggghhhiiijjj
-	aaaabbbbccccdddeeefffggghhhiiijjjkkklllmmmnnn
+	aaaabbbbccccdddeeefffggghhhiiijjjkkklllmmmnnnooo
 */
