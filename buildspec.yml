@@ -5,6 +5,7 @@ phases:
     commands:
       # Upgrade AWS CLI to the latest version
       - pip install --upgrade awscli
+      - echo 
   pre_build:
     commands:
       - mvn clean compile test
@@ -19,6 +20,7 @@ phases:
 artifacts:
   type: zip
   files:
+    - pom.xml
     - appspec.yml
     - template.yml
     - src/*
