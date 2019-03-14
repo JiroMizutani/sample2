@@ -20,7 +20,7 @@ public class HelloWorldController {
     @RequestMapping(method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity helloWorldGet(@RequestParam(value = "name", defaultValue = "World") String name) {
         String aString = "bob";
-        b.replace('b', 'p');
+        aString.replace('b', 'p');
         if(b.equals("pop"))
 
         if (dummy == 1) {
