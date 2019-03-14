@@ -21,7 +21,7 @@ public class HelloWorldController {
     public ResponseEntity helloWorldGet(@RequestParam(value = "name", defaultValue = "World") String name) {
         String aString = "bob";
         aString.replace('b', 'p');
-        if(b.equals("pop"))
+        if(aString.equals("pop"))
 
         if (dummy == 1) {
           System.out.println("test");
