@@ -3,9 +3,10 @@ node {
     awsCodeBuild(
       projectName: 'jenkins-build',
       region: 'ap-northeast-1',
-      sourceControlType: 'project',
+      sourceControlType: 'jenkins',
       sourceVersion: env.BRANCH_NAME,
-      // CodeBuild‚Éƒuƒ‰ƒ“ƒ`–¼‚ğŠÂ‹«•Ï”‚Å“n‚·‚½‚ß
+      credentialsType: 'keys',
+      // CodeBuildã«ãƒ–ãƒ©ãƒ³ãƒåã‚’ç’°å¢ƒå¤‰æ•°ã§æ¸¡ã™ãŸã‚
       envVariables: "[{BRANCH_NAME,${env.BRANCH_NAME}}]",
     )
   }
