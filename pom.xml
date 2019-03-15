@@ -52,6 +52,12 @@
             <version>${junit.platform.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.3</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -135,6 +141,17 @@
                   <!-- Optional directory to put findbugs xdoc xml report -->
                   <xmlOutputDirectory>target/site</xmlOutputDirectory>
                 </configuration>
+            </plugin>
+            <plugin>
+              <groupId>org.jacoco</groupId>
+              <artifactId>jacoco-maven-plugin</artifactId>
+              <reportSets>
+                <reportSet>
+                  <reports>
+                    <report>jacoco</report>
+                  </reports>
+                </reportSet>
+              </reportSets>
             </plugin>
         </plugins>
     </reporting>
